@@ -1,17 +1,17 @@
 import React from "react";
-import Footer from "./Components/Footer"
-import PortSearch from "./Components/PortSearch";
+import Team from "./Components/Team";
+import Footer from "./Components/Footer";
+import Port from "./Components/Port";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
-      <><div className="flex flex-col h-screen justify-between">
-        <PortSearch /> 
-    </div><div>
+      <div className="flex flex-col h-screen justify-between">
+          <Port />
+          <Team />
         <Footer />
-
-
-      </div></>
-      
+      </div>
   );
-  }
+}
 
 export default App;
