@@ -1,3 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+.html { 
+zoom: 1.5 /* Adjust the value as needed */
+}

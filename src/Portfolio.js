@@ -1,20 +1,44 @@
-class Portfolio { 
-    constructor(url, season, level, highestAward) { 
-        this.url = url; 
-        this.season = season; 
-        this.level = level;
-        this.awards = highestAward
+export class Portfolio { 
+    constructor(url, season, level, highestAward, teamName, teamNumber, awardPlace) { 
+      this.url = url; 
+      this.season = season; 
+      this.level = level;
+      this.awards = highestAward;
+      this.teamName = teamName; 
+      this.teamNumber = teamNumber; 
+      this.awardPlace = awardPlace; 
     }
+  
     getUrl() { 
-        return url; 
+      return this.url; 
     }
+  
     getSeason() { 
-        return this.season; 
+      return this.season; 
     }
+  
     getLevel() { 
-        return level; 
+      return this.level; 
     }
-   // getHighestAward() { 
-  //      return 
-  //  }
+  
+    getAward() { 
+      return this.awards;
+    }
+  
+    getName() { 
+      return this.teamName 
+    }
+    getNum() { 
+        return this.teamNumber;
+    }
+    getPlace() { 
+        if(this.awardPlace != null) { 
+            return this.awardPlace
+        }
+        else { 
+            return ""; 
+        }
+    }
+
 }
+  

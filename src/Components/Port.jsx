@@ -1,9 +1,11 @@
-import React from 'react'; 
+import React from 'react';
 
-const Port = () => { 
-    <div> 
-        <p> Work in progress </p>
-    </div>
-}
+const Port = () => {
+  return (
+    <>
+      <p>This is the Port component</p>
+    </>
+  );
+};
 
-export default Port; 
+export default Port;
