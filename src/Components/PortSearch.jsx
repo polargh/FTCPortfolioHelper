@@ -104,15 +104,15 @@ const PortSearch = () => {
      <div className = 'px-8'  style={{ display: 'flex', justifyContent: 'left'}}>
         {awardFilter && (
           <span
-            className="inline-block bg-blue-500 text-white px-2 py-1 rounded-full mr-2 mb-2"
-            onClick={() => handleTagClick('award')}
-          >
+            className="inline-block bg-blue-500 text-white px-2 py-1 rounded-full  mb-2"
+            onClick={() => handleTagClick('award')} >
             {awardFilter}
           </span>
         )}
         {levelFilter && (
           <span
-            className="inline-block bg-orange-500 text-white px-2 py-1 rounded-full mr-2 mb-2"
+          style = {{left: '14.3rem'}}
+            className="inline-block bg-orange-500 text-white px-2 py-1 rounded-full mr-2 mb-2 absolute top-13 "
             onClick={() => handleTagClick('level')}
           >
             {levelFilter}
@@ -122,7 +122,7 @@ const PortSearch = () => {
       <div className = 'px-8' style={{ display: 'flex', justifyContent: 'left'}}>
         <div className="mr-2 ">
           <select
-            className="border border-gray-300 rounded py-2 px-4 mr-2"
+            className="border border-gray-300 rounded py-2 px-4 mr-8"
             value={awardFilter}
             onChange={handleAwardFilterChange}
           >
@@ -135,7 +135,7 @@ const PortSearch = () => {
             <option value="Design">Design</option>
           </select>
           <select
-            className="border border-gray-300 rounded py-2 px-4"
+            className="border border-gray-300 rounded py-2 mr-8 px-4"
             value={levelFilter}
             onChange={handleLevelFilterChange}
           >
