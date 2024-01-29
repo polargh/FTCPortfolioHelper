@@ -1,3 +1,6 @@
 {
+  "plugins": [
+    "eslint-plugin-tsdoc"
+  ],
   "extends": "next/core-web-vitals"
 }
